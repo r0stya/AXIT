@@ -10,145 +10,183 @@
   font-style: normal;
   font-variant: normal;
   text-rendering: auto;
-  line-height: 1; }
+  line-height: 1;
+}
 
 .fa-lg {
   font-size: 1.33333em;
   line-height: 0.75em;
-  vertical-align: -.0667em; }
+  vertical-align: -0.0667em;
+}
 
 .fa-xs {
-  font-size: .75em; }
+  font-size: 0.75em;
+}
 
 .fa-sm {
-  font-size: .875em; }
+  font-size: 0.875em;
+}
 
 .fa-1x {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .fa-2x {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .fa-3x {
-  font-size: 3em; }
+  font-size: 3em;
+}
 
 .fa-4x {
-  font-size: 4em; }
+  font-size: 4em;
+}
 
 .fa-5x {
-  font-size: 5em; }
+  font-size: 5em;
+}
 
 .fa-6x {
-  font-size: 6em; }
+  font-size: 6em;
+}
 
 .fa-7x {
-  font-size: 7em; }
+  font-size: 7em;
+}
 
 .fa-8x {
-  font-size: 8em; }
+  font-size: 8em;
+}
 
 .fa-9x {
-  font-size: 9em; }
+  font-size: 9em;
+}
 
 .fa-10x {
-  font-size: 10em; }
+  font-size: 10em;
+}
 
 .fa-fw {
   text-align: center;
-  width: 1.25em; }
+  width: 1.25em;
+}
 
 .fa-ul {
   list-style-type: none;
   margin-left: 2.5em;
-  padding-left: 0; }
-  .fa-ul > li {
-    position: relative; }
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
 
 .fa-li {
   left: -2em;
   position: absolute;
   text-align: center;
   width: 2em;
-  line-height: inherit; }
+  line-height: inherit;
+}
 
 .fa-border {
   border: solid 0.08em #eee;
-  border-radius: .1em;
-  padding: .2em .25em .15em; }
+  border-radius: 0.1em;
+  padding: 0.2em 0.25em 0.15em;
+}
 
 .fa-pull-left {
-  float: left; }
+  float: left;
+}
 
 .fa-pull-right {
-  float: right; }
+  float: right;
+}
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
-  margin-right: .3em; }
+  margin-right: 0.3em;
+}
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
-  margin-left: .3em; }
+  margin-left: 0.3em;
+}
 
 .fa-spin {
   -webkit-animation: fa-spin 2s infinite linear;
-          animation: fa-spin 2s infinite linear; }
+  animation: fa-spin 2s infinite linear;
+}
 
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
-          animation: fa-spin 1s infinite steps(8); }
+  animation: fa-spin 1s infinite steps(8);
+}
 
 @-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 @keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
-            transform: rotate(0deg); }
+    transform: rotate(0deg);
+  }
   100% {
     -webkit-transform: rotate(360deg);
-            transform: rotate(360deg); } }
+    transform: rotate(360deg);
+  }
+}
 
 .fa-rotate-90 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg); }
+  transform: rotate(90deg);
+}
 
 .fa-rotate-180 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
   -webkit-transform: rotate(180deg);
-          transform: rotate(180deg); }
+  transform: rotate(180deg);
+}
 
 .fa-rotate-270 {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
   -webkit-transform: rotate(270deg);
-          transform: rotate(270deg); }
+  transform: rotate(270deg);
+}
 
 .fa-flip-horizontal {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
   -webkit-transform: scale(-1, 1);
-          transform: scale(-1, 1); }
+  transform: scale(-1, 1);
+}
 
 .fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(1, -1);
-          transform: scale(1, -1); }
+  transform: scale(1, -1);
+}
 
-.fa-flip-both, .fa-flip-horizontal.fa-flip-vertical {
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
   -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
   -webkit-transform: scale(-1, -1);
-          transform: scale(-1, -1); }
+  transform: scale(-1, -1);
+}
 
 :root .fa-rotate-90,
 :root .fa-rotate-180,
@@ -157,7 +195,8 @@
 :root .fa-flip-vertical,
 :root .fa-flip-both {
   -webkit-filter: none;
-          filter: none; }
+  filter: none;
+}
 
 .fa-stack {
   display: inline-block;
@@ -165,59 +204,84 @@
   line-height: 2em;
   position: relative;
   vertical-align: middle;
-  width: 2.5em; }
+  width: 2.5em;
+}
 
 .fa-stack-1x,
 .fa-stack-2x {
   left: 0;
   position: absolute;
   text-align: center;
-  width: 100%; }
+  width: 100%;
+}
 
 .fa-stack-1x {
-  line-height: inherit; }
+  line-height: inherit;
+}
 
 .fa-stack-2x {
-  font-size: 2em; }
+  font-size: 2em;
+}
 
 .fa-inverse {
-  color: #fff; }
+  color: #fff;
+}
 
 .fa-bolt:before {
-  content: "\f0e7"; }
+  content: "\f0e7";
+}
 
 .fa-cloud-download-alt:before {
-  content: "\f381"; }
+  content: "\f381";
+}
 
 .fa-cloud-upload-alt:before {
-  content: "\f382"; }
+  content: "\f382";
+}
 
-  .fa-facebook-f:before {
-  content: "\f39e"; }
+.fa-facebook-f:before {
+  content: "\f39e";
+}
 
 .fa-google-plus-g:before {
-  content: "\f0d5"; }
+  content: "\f0d5";
+}
 
 .fa-instagram:before {
-  content: "\f16d"; }
+  content: "\f16d";
+}
 
 .fa-keyboard:before {
-  content: "\f11c"; }
+  content: "\f11c";
+}
 
 .fa-lightbulb:before {
-  content: "\f0eb"; }
+  content: "\f0eb";
+}
 
 .fa-pinterest:before {
-  content: "\f0d2"; }
+  content: "\f0d2";
+}
 
 .fa-rss:before {
-  content: "\f09e"; }
+  content: "\f09e";
+}
 
 .fa-stumbleupon:before {
-  content: "\f1a4"; }
+  content: "\f1a4";
+}
 
 .fa-twitter:before {
-  content: "\f099"; }
+  content: "\f099";
+}
+
+.fa-bars:before {
+  content: "\f0c9";
+}
+
+.fa-times:before {
+  content: "\f00d";
+}
 
 .sr-only {
   border: 0;
@@ -227,46 +291,70 @@
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px; }
+  width: 1px;
+}
 
-.sr-only-focusable:active, .sr-only-focusable:focus {
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto; }
+  width: auto;
+}
 @font-face {
-  font-family: 'Font Awesome 5 Brands';
+  font-family: "Font Awesome 5 Brands";
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: url("../assets/fonts/fa-brands-400.eot");
-  src: url("../assets/fonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fa-brands-400.woff2") format("woff2"), url("../assets/fonts/fa-brands-400.woff") format("woff"), url("../assets/fonts/fa-brands-400.ttf") format("truetype"), url("../assets/fonts/fa-brands-400.svg#fontawesome") format("svg"); }
+  src: url("../assets/fonts/fa-brands-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/fa-brands-400.woff2") format("woff2"),
+    url("../assets/fonts/fa-brands-400.woff") format("woff"),
+    url("../assets/fonts/fa-brands-400.ttf") format("truetype"),
+    url("../assets/fonts/fa-brands-400.svg#fontawesome") format("svg");
+}
 
 .fab::before {
-  font-family: 'Font Awesome 5 Brands';
-  font-weight: 400; }
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 400;
   font-display: block;
   src: url("../assets/fonts/fa-regular-400.eot");
-  src: url("../assets/fonts/fa-regular-400.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fa-regular-400.woff2") format("woff2"), url("../assets/fonts/fa-regular-400.woff") format("woff"), url("../assets/fonts/fa-regular-400.ttf") format("truetype"), url("../assets/fonts/fa-regular-400.svg#fontawesome") format("svg"); }
+  src: url("../assets/fonts/fa-regular-400.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/fa-regular-400.woff2") format("woff2"),
+    url("../assets/fonts/fa-regular-400.woff") format("woff"),
+    url("../assets/fonts/fa-regular-400.ttf") format("truetype"),
+    url("../assets/fonts/fa-regular-400.svg#fontawesome") format("svg");
+}
 
 .far::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 400; }
+  font-family: "Font Awesome 5 Free";
+  font-weight: 400;
+}
 @font-face {
-  font-family: 'Font Awesome 5 Free';
+  font-family: "Font Awesome 5 Free";
   font-style: normal;
   font-weight: 900;
   font-display: block;
   src: url("../assets/fonts/fa-solid-900.eot");
-  src: url("../assets/fonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/fa-solid-900.woff2") format("woff2"), url("../assets/fonts/fa-solid-900.woff") format("woff"), url("../assets/fonts/fa-solid-900.ttf") format("truetype"), url("../assets/fonts/fa-solid-900.svg#fontawesome") format("svg"); }
+  src: url("../assets/fonts/fa-solid-900.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/fa-solid-900.woff2") format("woff2"),
+    url("../assets/fonts/fa-solid-900.woff") format("woff"),
+    url("../assets/fonts/fa-solid-900.ttf") format("truetype"),
+    url("../assets/fonts/fa-solid-900.svg#fontawesome") format("svg");
+}
 
 .fa::before,
 .fas::before {
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900; }
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}

@@ -1,0 +1,19 @@
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1400px;
+
+
+@mixin bp ($bp) {
+  @media screen and (max-width: $bp) {
+    @content
+  }
+};
+
+@mixin bpMin ($bp) {
+  @media screen and (min-width: $bp) {
+    @content
+  }
+};
