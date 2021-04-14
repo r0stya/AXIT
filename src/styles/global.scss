@@ -1,4 +1,17 @@
+@use './fonts.scss';
 @import './variables.scss';
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $open;
+}
+
 .container {
   max-width: 1108px;
   margin: 0 auto;
@@ -18,3 +31,59 @@
   }
 }
 
+.line {
+  height: 2px;
+  width: 64px;
+  background-color: #fff;
+  display: block;
+}
+.text {
+  font-size: 16px;
+  color: #fff;
+  opacity: .8;
+  line-height: 1.44;
+  font-weight: 300;
+}
+.btn {
+  text-decoration: none;
+  background-color: transparent;
+  color: $white;
+  font-size: 15px;
+}
+.input {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  font-size: 14px;
+  padding: 9px;
+
+  &:focus {
+    bottom: none;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:active {
+    bottom: none;
+    outline: 0;
+    outline-offset: 0;
+  }
+
+  &:hover {
+    bottom: none;
+    outline: 0;
+    outline-offset: 0;
+  }
+  
+}
+
+.logo {
+  font-size: 16px;
+  font-family: $ral;
+  color: #fff;
+  font-weight: 700;
+
+  span {
+    font-weight: 300;
+    color: #f38537;
+  }
+}

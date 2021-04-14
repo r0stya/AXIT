@@ -12,7 +12,7 @@ export default class BurgerMenu {
   }
 
   closeMenu() {
-    this.menuBody.style.transform = 'translateY(-1000px)'
+    this.menuBody.style.transform = 'translateY(-2000px)'
     this.burgerBtn.classList.remove('opened', 'fa-times')
     this.burgerBtn.classList.add('fa-bars')
   }

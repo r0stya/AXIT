@@ -1,0 +1,123 @@
+@import './variables.scss';
+
+.main-screen {
+  background-image: url('../img/main-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  padding-top: 67px;
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left {
+    flex: 0 1 520px;
+
+    @include bp($lg) {
+      flex: 1 1 auto;
+    }
+  }
+
+
+  &__logo {
+    font-size: 81px;
+    width: max-content;
+  }
+
+
+  &__title {
+    font-size: 36px;
+    font-family: $ral;
+    font-weight: 400;
+    color: $white;
+    margin: 35px 0;
+  }
+
+  &__line {
+    width: 64px;
+    height: 2px;
+  }
+
+  &__text {
+    font-family: $ral;
+    font-size: 16px;
+    line-height: 1.44;
+    color: $white;
+    opacity: 0.8;
+    margin-top: 40px;
+    margin-bottom: 53px;
+  }
+
+  &__btn {
+    padding: 9px 30px;
+    border: 2px solid $white;
+    transition: all 0.15s ease-in;
+
+    &:hover {
+      background-color: $white;
+      color: $dark-grey;
+    }
+  }
+
+  &__right {
+    flex: 0 0 360px;
+    background-color: $white;
+    align-self: center;
+
+    @include bp($lg) {
+      display: none;
+    }
+  }
+
+  &__form {
+  }
+}
+
+.free-form {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: 20px;
+    color: $dark-grey;
+    font-weight: 700;
+    background-color: $light-grey;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    span {
+      color: $orange;
+    }
+  }
+
+  &__input {
+    width: 285px;
+    height: 31px;
+    margin: 0 auto 42px auto;
+    font-family: $open;
+
+    &::placeholder {
+      color: #bdbdbd;
+    }
+  }
+
+  &__btn {
+    margin-top: 19px;
+    background-color: $orange;
+    border: none;
+    padding: 18px 0;
+    cursor: pointer;
+    transition: all 0.15s ease-in;
+
+    &:hover {
+      background-color: #ff9b51;
+    }
+  }
+}
