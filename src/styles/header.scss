@@ -10,12 +10,9 @@
   &__content {
     display: flex;
     justify-content: space-between;
-    padding: 20px 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-items: center;
-
-    @include bp($xl) {
-      margin: 0 46px;
-    }
   }
 
   &__logo {
