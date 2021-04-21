@@ -56,11 +56,17 @@
   &__btn {
     padding: 9px 30px;
     border: 2px solid $white;
-    transition: all 0.15s ease-in;
+    transition: $t-hover;
+    font-weight: 600;
+    font-size: 15px;
 
     &:hover {
       background-color: $white;
       color: $dark-grey;
+    }
+
+    @include bp($sm) {
+      width: 100%;
     }
   }
 
@@ -111,10 +117,10 @@
     border: none;
     padding: 18px 0;
     cursor: pointer;
-    transition: all 0.15s ease-in;
+    transition: $t-hover;
 
     &:hover {
-      background-color: #ff9b51;
+      background-color: $light-orange;
     }
   }
 }

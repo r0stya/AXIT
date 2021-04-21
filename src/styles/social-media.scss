@@ -37,6 +37,10 @@
     font-size: 14px;
     margin-top: 12px;
 
+    @include bp($lg) {
+      line-height: 17px;
+    }
+
     @include bp($md) {
       display: none;
     }
@@ -61,7 +65,7 @@
     font-size: 38px;
     margin-right: 10px;
     margin-top: 15px;
-    transition: all .15s ease-in;
+    transition: $t-hover;
 
     &:hover {
       color: $dark-grey;

@@ -46,9 +46,6 @@
   &__body {
     display: flex;
     
-    @include bpMin($sm) {
-      transform: translateY(0) !important;
-    }
     @include bp($sm) {
       display: flex;
       position: fixed;
@@ -70,7 +67,7 @@
   &__link {
     margin-left: 46px;
     color: rgba(255, 255, 255, 0.69);
-    transition: color .15s ease-in;
+    transition: $t-hover;
     font-size: 14px;
     font-weight: 600;
 
