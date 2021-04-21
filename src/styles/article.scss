@@ -1,0 +1,120 @@
+@import "./variables.scss";
+
+.article {
+  
+  &__wrapper {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    justify-content: space-between;
+
+    @include bp($lg) {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+
+    @include bp($md) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include bp($sm) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__image {
+    box-shadow: 0px 0px 40px -12px rgba(0,0,0,0.45);
+    align-self: center;
+    margin-right: 20px;
+
+    @include bp($lg) {
+      margin-right: 0;
+      margin-top: 50px;
+    }
+    
+    img {
+      max-width: 482px;
+
+      @include bp($sm) {
+        max-width: 280px;
+      }
+    }
+
+  }
+
+  &__content {
+  }
+
+  &__title {
+    color: $light-black;
+    font-size: 20px;
+    font-weight: 700;
+  }
+
+  &__line {
+    background-color: $orange;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    color: $text-grey;
+    font-size: 14px;
+    line-height: 1.43;
+    margin-bottom: 5px;
+    max-width: 413px;
+
+    @include bp($lg) {
+      max-width: none;
+    }
+  }
+}
+
+.article-descr {
+  display: flex;
+  margin-top: 43px;
+
+  &__icon {
+    flex: 0 0 40px;
+    height: 40px;
+    border: 2px solid $orange;
+    border-radius: 50%;
+    color: $orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+  }
+
+  &__block {
+  }
+
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    color: $light-black;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $text-grey;
+    max-width: 360px;
+    margin-top: 10px;
+  }
+}
+
+.article_grey {
+  background-color: $light-grey;
+  
+  .article__wrapper {
+    flex-direction: row-reverse;
+
+    @include bp($lg) {
+      flex-direction: column-reverse;
+      justify-content: flex-start;
+    }
+  }
+}
