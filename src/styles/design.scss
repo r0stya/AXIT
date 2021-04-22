@@ -1,0 +1,49 @@
+@import "./variables.scss";
+
+.design {
+  background-image: url('../img/download-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+
+  &__wrapper {
+    padding-top: 74px;
+    padding-bottom: 63px;
+    text-align: center;
+  }
+
+  &__title {
+    color: $white;
+  }
+
+  &__line {
+    background-color: $white;
+    margin: 24px auto;
+  }
+
+  &__subtitle {
+    color: $white;
+    opacity: .8;
+    font-size: 16px;
+    font-family: $ral;
+  }
+
+  &__btn {
+    border: 2px solid $white;
+    padding: 10px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: $t-hover;
+    font-size: 15px;
+    font-weight: 600;
+
+    &:hover {
+      background-color: $white;
+      color: $dark-grey;
+    }
+
+    @include bp($md) {
+      width: 100%;
+    }
+  }
+}
