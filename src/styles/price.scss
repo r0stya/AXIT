@@ -40,7 +40,7 @@
     align-items: flex-end;
     margin-top: 80px;
 
-    @include bp($xl) {
+    @include bp($md) {
       flex-direction: column;
       align-items: center;
     }
@@ -55,10 +55,15 @@
   @include bp($xl) {
     flex: none;
     margin-top: 40px;
+    width: 243px;
 
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  @include bp($md) {
+    width: 343px;
   }
 
   @include bp($xs) {
