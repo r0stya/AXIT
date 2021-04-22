@@ -1,0 +1,105 @@
+@import "./variables.scss";
+
+.review {
+
+  &__wrapper {
+    padding-top: 108px;
+    padding-bottom: 100px;
+
+    @include bp($md) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include bp($sm) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__line {
+    background-color: $orange;
+    margin: 30px auto;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $text-grey;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    flex-wrap: wrap;
+
+    @include bp($md) {
+      justify-content: space-around;
+    }
+  }
+}
+
+.feedback {
+  margin-top: 40px;
+  margin-right: 20px;
+
+  &__message {
+    width: 273px;
+    color: $text-grey;
+    padding: 24px 12px;
+    background-color: $light-grey;
+    font-size: 14px;
+    border-radius: 3px;
+    position: relative;
+
+    @include bp($sm) {
+      width: 100%;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -15px;
+      left: 28px;
+      clip-path: polygon(50% 99%, 0 0, 100% 0);
+      width: 20px;
+      height: 15px;
+      background-color: $light-grey;
+    }
+  }
+
+  &__author {
+    margin-top: 23px;
+  }
+}
+.author {
+  display: flex;
+  align-items: center;
+
+  &__image {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__name {
+    margin-left: 15px;
+  }
+
+  &__fullname {
+    color: $dark-grey;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 7px;
+  }
+
+  &__position {
+    font-size: 14px;
+    color: $text-grey;
+  }
+}

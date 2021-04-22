@@ -1,0 +1,123 @@
+@import "./variables.scss";
+
+.price {
+  background-color: $light-grey;
+
+  &__wrapper {
+    padding-top: 108px;
+    padding-bottom: 98px;
+
+    @include bp($md) {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+
+    @include bp($sm) {
+      flex-direction: column;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__header {
+    text-align: center;
+  }
+
+  &__line {
+    background-color: $orange;
+    margin: 30px auto;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    line-height: 1.43;
+    color: $text-grey;
+  }
+
+  &__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 80px;
+
+    @include bp($xl) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.option {
+  flex: 0 0 343px;
+  width: 343px;
+  text-align: center;
+
+  @include bp($xl) {
+    flex: none;
+    margin-top: 40px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  @include bp($xs) {
+    width: 100%;
+  }
+
+  &__title {
+    padding: 21px 0;
+    background-color: $dark-grey;
+    font-size: 20px;
+    font-weight: 700;
+    color: $white;
+    border-bottom: 1px solid $white;
+  }
+
+  &__price {
+    background-color: $dark-grey;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
+
+  &__cost {
+    font-family: $ral;
+    font-size: 94px;
+    font-weight: 700;
+    color: $white;
+
+    span {
+      font-size: 35px;
+    }
+  }
+
+  &__subtitle {
+    margin-top: 17px;
+    font-size: 14px;
+    color: $white;
+    opacity: .5;
+  }
+
+  &__descr {
+    min-height: 5px;
+    background-color: $orange;
+    color: $white;
+    
+    p {
+      padding: 13px 0;
+      font-size: 14px;
+      font-weight: 700;
+    }
+  }
+
+  &__features {
+  }
+
+  &__feature {
+    background-color: $white;
+    padding: 14px 0;
+    border-bottom: 1px solid $light-grey;
+    font-size: 14px;
+    color: $text-grey;
+  }
+}
