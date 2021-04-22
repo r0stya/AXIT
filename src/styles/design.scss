@@ -10,6 +10,16 @@
     padding-top: 74px;
     padding-bottom: 63px;
     text-align: center;
+
+    @include bp($md) {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+
+    @include bp($sm) {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
   }
 
   &__title {
