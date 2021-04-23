@@ -6,6 +6,7 @@ import './styles/index.scss';
 
 import BurgerMenu from './scripts/burger-menu';
 import Tabs from './scripts/tabs';
+import Scroll  from './scripts/scroll'
 
 const burgerMenu = new BurgerMenu();
 burgerMenu.init();
@@ -35,3 +36,10 @@ Object.keys(tabs).forEach(tab => {
   const tabEx = new Tabs(...tabs[tab]);
   tabEx.init();
 });
+
+const scroll = new Scroll();
+scroll.init();
+
+
+
+

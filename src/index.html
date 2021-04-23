@@ -15,17 +15,17 @@
         <div class="menu">
           <div class="menu__burger-icon fas fa-bars" id="burger-btn"></div>
           <nav class="menu__body" id="menu-body">
-            <a href="#" class="menu__link">Features</a>
-            <a href="#" class="menu__link">About</a>
-            <a href="#" class="menu__link">Pricing</a>
-            <a href="#" class="menu__link">Reviews</a>
-            <a href="#" class="menu__link">Contact</a>
+            <a href="#tabs" class="menu__link scroll-link">Features</a>
+            <a href="#about" class="menu__link scroll-link">About</a>
+            <a href="#pricing" class="menu__link scroll-link">Pricing</a>
+            <a href="#reviews" class="menu__link scroll-link">Reviews</a>
+            <a href="#contact" class="menu__link scroll-link">Contact</a>
           </nav>
         </div>
       </div>
     </header>
     <main>
-      <section class="main-screen">
+      <section class="main-screen" id="mainScreen">
         <div class="container main-screen__wrapper">
           <div class="main-screen__left">
             <div class="logo main-screen__logo">AX<span>IT</span></div>
@@ -87,7 +87,7 @@
           </div>
         </div>
       </section>
-      <section class="tab">
+      <section class="tab" id="tabs">
         <div class="container tab__wrapper">
           <div class="tab__nav" id="tabNav"></div>
           <div class="tab__content" id="tabContent"></div>
@@ -96,7 +96,7 @@
           </div>
         </div>
       </section>
-      <section class="article">
+      <section class="article" id="about">
         <div class="article__wrapper container">
           <div class="article__image">
             <img src="./img/post-1.png" alt="old-city">
@@ -205,7 +205,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" id="pricing">
         <div class="price__wrapper container">
           <div class="price__header">
             <h2 class="price__title title">PRICING OPTIONS</h2>
@@ -264,7 +264,7 @@
           </div>
         </div>
       </section>
-      <section class="review">
+      <section class="review" id='reviews'>
         <div class="review__wrapper container">
           <div class="review__header">
             <h2 class="review__title title">WHAT OUR CUSTOMERS ARE SAYING</h2>
@@ -331,7 +331,7 @@
           <button class="btn design__btn">Download</button>
         </div>
       </section>
-      <section class="contacts">
+      <section class="contacts" id="contact">
         <div class="contacts__wrapper container">
           <div class="contacts__header">
             <h2 class="contacts__title title">CONTACT US</h2>
@@ -366,5 +366,6 @@
         <p class="footer__descr">© 2015 Axure Themes</p>
       </div>
     </footer>
+    <a href="#mainScreen" class="scrollToTop scroll-link fas fa-chevron-up"></a>
   </body>
 </html>
