@@ -2,7 +2,8 @@ const path = require('path')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require("copy-webpack-plugin");
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const ImageminWebpWebpackPlugin= require('imagemin-webp-webpack-plugin');
 
 let mode = 'development';
 let target = 'web';
@@ -41,6 +42,7 @@ module.exports = {
         { from: "./src/img", to: "img" },
       ],
     }),
+    new ImageminWebpWebpackPlugin(),
   ],
 
   module: {
